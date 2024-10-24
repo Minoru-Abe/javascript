@@ -94,17 +94,43 @@
 // console.log(func3("STR!!"));
 
 
-// 練習問題。足し算。
+// // 練習問題。足し算。
 
-const add = (int1, int2) => {
-    return (int1 + int2);
-};
+// const add = (int1, int2) => {
+//     return (int1 + int2);
+// };
 
-console.log(add(1,3));
+// console.log(add(1,3));
 
 
-const create_object = (num1, num2) => ({
-    hoge: num1,
-    huga: num2
-});
-console.log(create_object(3,4));
+// const create_object = (num1, num2) => ({
+//     hoge: num1,
+//     huga: num2
+// });
+// console.log(create_object(3,4));
+
+
+// // 分割代入じゃないとき
+// const myprofile = {
+//     name: "Minoru",
+//     age: 41
+// };
+// console.log(myprofile);
+
+// const message2 = `My name is ${myprofile.name}. I am ${myprofile.age} years old`;
+// console.log(message2);
+
+// // 分割代入
+// const {name, age} = myprofile;
+// const message3 = `My name is ${name}. I am ${age} years old.`;
+// console.log(message3);
+
+// 配列の分割代入
+
+const array = ["Minoru", 42];
+const message1 = `My name is ${array[0]}. I am ${array[1]} years old.`;
+console.log(message1);
+
+const [name, age] = array;
+const message2 = `My name is ${name}. I am ${age} years old.`;
+console.log(message2);
