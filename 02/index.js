@@ -51,16 +51,60 @@
 // val5.push("monkey");
 // console.log(val5);
 
-// テンプレート文字列
-const name = "jake";
-const age = 31;
+// // テンプレート文字列
+// const name = "jake";
+// const age = 31;
 
-// 私の名前はじゃけぇです。年齢は31歳です。
+// // 私の名前はじゃけぇです。年齢は31歳です。
 
-// 従来の方法
-const message1 = "My name is " + name + ". I am " + age + " years old.";
-console.log(message1);
+// // 従来の方法
+// const message1 = "My name is " + name + ". I am " + age + " years old.";
+// console.log(message1);
 
-// テンプレート文字列を用いた方法
-const message2 = `My name is ${name}. I am ${age} years old.`
-console.log(message2);
+// // テンプレート文字列を用いた方法
+// const message2 = `My name is ${name}. I am ${age} years old.`
+// console.log(message2);
+
+
+// アロー関数
+
+// // 従来の関数は
+// function func1(str) {
+//     return str;
+// };
+
+// console.log(func1("Func1!!"));
+
+
+// const func2 = function (str) {
+//     return str;
+// };
+
+// console.log(func2("Func2!!!!"));
+
+
+// // アロー関数の場合
+// const func3 = (str) => {return str};
+// console.log(func3("Func3!!!!!!"));
+
+// const func3 = str => {return str};
+// console.log(func3("Func3!!!!!"));
+
+// const func3 = str => str;
+// console.log(func3("STR!!"));
+
+
+// 練習問題。足し算。
+
+const add = (int1, int2) => {
+    return (int1 + int2);
+};
+
+console.log(add(1,3));
+
+
+const create_object = (num1, num2) => ({
+    hoge: num1,
+    huga: num2
+});
+console.log(create_object(3,4));
