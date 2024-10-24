@@ -125,12 +125,27 @@
 // const message3 = `My name is ${name}. I am ${age} years old.`;
 // console.log(message3);
 
-// 配列の分割代入
+// // 配列の分割代入
 
-const array = ["Minoru", 42];
-const message1 = `My name is ${array[0]}. I am ${array[1]} years old.`;
-console.log(message1);
+// const array = ["Minoru", 42];
+// const message1 = `My name is ${array[0]}. I am ${array[1]} years old.`;
+// console.log(message1);
 
-const [name, age] = array;
-const message2 = `My name is ${name}. I am ${age} years old.`;
-console.log(message2);
+// const [name, age] = array;
+// const message2 = `My name is ${name}. I am ${age} years old.`;
+// console.log(message2);
+
+// // デフォルト値（引数、分割代入）
+// const sayhello = (name = "Guest") => console.log(`Hello, ${name}!!` );
+// sayhello("Minoru");
+// sayhello();
+
+
+const myProfile = {
+    age: 42, 
+    name: "BEBE"
+};
+
+const {age=22, name="Minoru"} = myProfile;
+console.log(age);
+console.log(name);
