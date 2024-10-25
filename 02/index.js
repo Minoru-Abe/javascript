@@ -163,14 +163,19 @@
 // const {name, age} = profile;
 // console.log(`My name is ${name}. I am ${age} years old.`);
 
+// const name="Jake";
+// const age = 42;
 
+// const myProfile = {
+//     name,
+//     age
+// };
+// console.log(myProfile);
 
-const name="Jake";
-const age = 42;
+const arr1 = [1,2];
+console.log(arr1);
+console.log(...arr1);
 
-const myProfile = {
-    name,
-    age
-};
-
-console.log(myProfile);
+const sumfunc = (num1, num2) => console.log(num1 + num2);
+sumfunc(1,2);
+sumfunc(...arr1);
