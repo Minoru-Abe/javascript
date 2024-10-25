@@ -141,11 +141,36 @@
 // sayhello();
 
 
+// const myProfile = {
+//     age: 42, 
+//     name: "BEBE"
+// };
+
+// const {age=22, name="Minoru"} = myProfile;
+// console.log(age);
+// console.log(name);
+
+
+
+// const profile = {
+//     name: "Minoru",
+//     age: 42
+// };
+
+// console.log(profile);
+
+
+// const {name, age} = profile;
+// console.log(`My name is ${name}. I am ${age} years old.`);
+
+
+
+const name="Jake";
+const age = 42;
+
 const myProfile = {
-    age: 42, 
-    name: "BEBE"
+    name,
+    age
 };
 
-const {age=22, name="Minoru"} = myProfile;
-console.log(age);
-console.log(name);
+console.log(myProfile);
