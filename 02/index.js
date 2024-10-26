@@ -191,16 +191,28 @@
 // console.log(arr3);
 
 
-// 配列のコピー、結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
+// // 配列のコピー、結合
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
 
-const arr6 = [...arr4];
-console.log(arr6);
-arr4[0] = 99;
-console.log(arr4);
-console.log(arr6);
-const arr7 = [...arr4, ...arr5];
-console.log(arr7);
+// const arr6 = [...arr4];
+// console.log(arr6);
+// arr4[0] = 99;
+// console.log(arr4);
+// console.log(arr6);
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7);
 
 
+
+const arr1 = [10,20];
+const arr2 = [30,40];
+console.log(arr1);
+console.log(arr2);
+
+const arr3 = [...arr1, ...arr2];
+console.log(arr3);
+
+
+const [num1, num2, num3, num4] = [...arr1, ...arr2];
+console.log(num1);
