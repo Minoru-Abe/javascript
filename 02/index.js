@@ -265,3 +265,16 @@
 
 // console.log(arr11);
 
+// 三項演算子
+
+const num = "1300";
+console.log(num.toLocaleString());
+
+const message = typeof num === "number" ? num.toLocaleString() : "Please input number" ;
+console.log(message);
+
+const checkSum = (num1, num2) => {
+    return num1+num2 > 100 ? "許容範囲外です" : "許容範囲内です" ;
+}
+
+console.log(checkSum(51,50));
