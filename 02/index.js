@@ -203,16 +203,65 @@
 // const arr7 = [...arr4, ...arr5];
 // console.log(arr7);
 
+// const arr1 = [10,20];
+// const arr2 = [30,40];
+// console.log(arr1);
+// console.log(arr2);
+
+// const arr3 = [...arr1, ...arr2];
+// console.log(arr3);
 
 
-const arr1 = [10,20];
-const arr2 = [30,40];
-console.log(arr1);
-console.log(arr2);
-
-const arr3 = [...arr1, ...arr2];
-console.log(arr3);
+// const [num1, num2, num3, num4] = [...arr1, ...arr2];
+// console.log(num1);
 
 
-const [num1, num2, num3, num4] = [...arr1, ...arr2];
-console.log(num1);
+// const arr1 = ["Minoru", "Tatsumi", "Reiri"];
+// for (let i=0; i < arr1.length; i++) {
+//     console.log(arr1[i]);
+// }
+// arr1.map( (name) => {
+//     console.log(name);
+// });
+
+// arr1.map( (name, index) => {
+//     console.log(`${index +1} name is ${name}`);
+// });
+
+// const arr2 = [1,2,3,4,5]
+// const arr3 = arr2.filter( (num) => {
+//     return num % 2 == 1;
+// });
+
+// console.log(arr3);
+
+// const arr3 = [1,2,3,4,5];
+// const arr4 = arr3.map( (num) => {
+//     return num*2;
+// });
+
+// console.log(arr4);
+
+// const arr5 = ["Minoru", "Tatsumi", "Reiri"];
+// const arr6 = arr5.map (name => `${name} san`);
+// console.log(arr6);
+
+// const arr7 = [1,2,3,4,5];
+// const arr8 = arr7.map(num => num*2);
+// console.log(arr8);
+
+// const arr9 = arr7.filter(num => (num%2==1));
+// console.log(arr9);
+
+// const arr10 = ["Minoru", "Tatsumi", "Reiri"];
+
+// const arr11 = arr10.map( name => {
+//     if (name=="Minoru"){
+//         return name;
+//     } else {
+//         return `${name} san`;
+//     };
+// });
+
+// console.log(arr11);
+
