@@ -267,14 +267,68 @@
 
 // 三項演算子
 
-const num = "1300";
-console.log(num.toLocaleString());
+// const num = "1300";
+// console.log(num.toLocaleString());
 
-const message = typeof num === "number" ? num.toLocaleString() : "Please input number" ;
-console.log(message);
+// const message = typeof num === "number" ? num.toLocaleString() : "Please input number" ;
+// console.log(message);
 
-const checkSum = (num1, num2) => {
-    return num1+num2 > 100 ? "許容範囲外です" : "許容範囲内です" ;
-}
+// const checkSum = (num1, num2) => {
+//     return num1+num2 > 100 ? "許容範囲外です" : "許容範囲内です" ;
+// }
 
-console.log(checkSum(51,50));
+// console.log(checkSum(51,50));
+
+
+
+
+
+// 論理演算子の本当の意味を知ろう
+// truthy, falsyについて
+// "ABC" 0 10 undefined null false NaN "" [] {}
+
+// const val = "";
+
+// if (val) {
+//     console.log(`${val} is truthy.`);
+// } else {
+//     console.log(`${val} is falsy.`);
+// };
+
+// const val2 = ["ABC", 0, -1, 10, undefined, null, false, NaN, "", [], {}];
+// console.log(val2);
+
+// val2.map( (value) => {
+//     if (value) {
+//         console.log(`${value} is truthy.`);
+//     } else {
+//         console.log(`${value} is falsy.`);
+//     }
+// });
+
+// val2.map ( (value) => {
+//     (value) ? console.log(`${value} is truthy.`) : console.log(`${value} is falsy.`);
+// });
+
+// val2.map ( value => (value ? console.log(`${value} is truthy.`) : console.log(`${value} is falsy.`)));
+
+// const val3 = val2.filter( value => (value));
+// console.log(val2);
+// console.log(val3);
+
+// || は左側がtruthyの時その時点で返却する
+const num = "ABC";
+const fee = num || "金額は未設定です";
+console.log(fee);
+
+const num1 = 5;
+const num2 = 10;
+const num3 = 4;
+const num4 = 99;
+
+const result = num1 || num2 || num3 || num4 || "全部だめ";
+console.log(result);
+
+// &&は左側がfalsyの時、その時点で返却する
+const result2 = num1 && num2 && num3 && num4 &&  "何か設定されました";
+console.log(result2);
