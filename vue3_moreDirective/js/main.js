@@ -1,6 +1,12 @@
 const app = Vue.createApp({
     data: () => ({
-        url: 'https://www.google.co.jp/'
-    })
+        message: 'Hello Vue.js'
+    }),
+    computed: {
+        reversedMessage: function(){
+            return this.message.split('').reverse().join('')
+
+        }
+    }
 })
 app.mount('#app')
