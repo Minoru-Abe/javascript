@@ -1,23 +1,17 @@
 const app = Vue.createApp({
     data: () => ({
-        message: 'Hello Vue.js'
+        basePrice: 100
     }),
     computed: {
-        reversedMessage: function(){
-            return this.message.split('').reverse().join('')
-
-        },
-        add: function() {
-            return Math.random()
-        }
-    },
-    methods: {
-        reversedMessageMethod: function() {
-            return this.message.split('').reverse().join('')
-        },
-        addMethod: function() {
-            return Math.random()
+        taxIncludedPrice: {
+            get: function() {
+                return this.basePrice * 1.1
+            },
+            set: function(value) {
+                this.basePrice = value/1.1
+            }
         }
     }
+
 })
 app.mount('#app')
