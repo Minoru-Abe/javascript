@@ -1,11 +1,15 @@
 const app = Vue.createApp({
     data: () => ({
-        message: 'HelloWorld'
+        meter: 0,
+        kilometer: 0
     }),
     watch: {
-        message: function(newValue, oldValue) {
-            console.log('new: %s, old: %s', newValue, oldValue)
+        meter: function(newValue){
+            this.kilometer = newValue / 1000
+        },
+        kilometer: function(newValue){
+            this.meter = newValue * 1000
         }
     }
 })
-app.mount('#app')
+app.mount("#app")
