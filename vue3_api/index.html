@@ -9,14 +9,19 @@
 <body>
     <div id="app">
         <p>search message<input type="text" v-model="searchText"></p>
+        <p>{{message}}</p>
         <ul>
             <li v-for="result in results">
-                {{result.name}}
-
+                <a v-bind:href="result.url" target="_blank">
+                    {{result.title}}
+                </a>
+                likes: {{result.likes_count}}
             </li>
         </ul>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.js"></script>
     <script src="js/main.js"></script>
     
 </body>
