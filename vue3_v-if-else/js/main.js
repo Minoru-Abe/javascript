@@ -1,6 +1,6 @@
 const app = Vue.createApp({
     data: () => ({
-        color: 'green'
+        toggle: false
     })
 
 })
