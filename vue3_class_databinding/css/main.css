@@ -1,7 +1,15 @@
 .red {
-    color: red
+    color: red;
 }
 
 .large {
     font-size: 36px;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.text-blue {
+    color: blue;
 }
