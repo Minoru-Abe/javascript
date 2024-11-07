@@ -1,8 +1,9 @@
 const app = Vue.createApp({
     data: () => ({
-        message: 'Hello Vue.js',
-        isLarge: true,
-        isRed: true
+        classObject: {
+            large: true,
+            red: true
+        }
     })
 })
-app.mount('#app')
+app.mount("#app")
