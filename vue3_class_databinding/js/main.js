@@ -1,16 +1,23 @@
 const app = Vue.createApp({
     data: () => ({
-        largeClass: {
-            large: true,
-            red: true
+        styleObject: {
+            color: 'red',
+            fontSize: '50px'
+        }
+    }),
+    methods: {
+        colorBlue: function() {
+            this.styleObject.color = 'blue'
         },
-        blueClass: {
-            'text-blue': true
+        colorRed: function() {
+            this.styleObject.color = 'red'
         },
-        bggrayClass: {
-            'bg-gray' : true
+        colorYellow: function() {
+            this.styleObject.color = 'yellow'
         },
-        isLarge: false
-    })
+        colorPurple: function() {
+            this.styleObject.color = 'purple'
+        }
+    }
 })
 app.mount("#app")

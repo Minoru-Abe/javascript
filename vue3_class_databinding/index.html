@@ -8,7 +8,15 @@
 </head>
 <body>
     <div id="app">
-        <p>Hello <span v-bind:class="[isLarge? largeClass: blueClass, bggrayClass]">Vue.js!</span></p>
+        <p>Hello
+            <span v-bind:style="styleObject">
+                Vue.js
+            </span>
+        </p>
+        <p><button v-on:click="colorBlue">Blue!</button></p>
+        <p><button v-on:click="colorRed">Red!</button></p>
+        <p><button v-on:click="colorYellow">Yellow!</button></p>
+        <p><button v-on:click="colorPurple">Purple!</button></p>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script src="js/main.js"></script>
