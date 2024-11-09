@@ -8,10 +8,9 @@
 </head>
 <body>
     <div id="app">
-        <p>{{counter}}</p>
-        <button v-on:click="countUp" id="click1">click1</button>
-        <button v-on:click="countUp" id="click2">click2</button>
-        <button v-on:click="countUp" id="click3">click3</button>
+        <button v-on:click="clickHandler('Vue.js')">click</button>
+        <p>{{message}}</p>
+
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script src="js/main.js"></script>

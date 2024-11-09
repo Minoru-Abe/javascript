@@ -1,6 +1,7 @@
 const app = Vue.createApp({
     data: () => ({
-        counter: 0
+        counter: 0,
+        message: ''
     }),
     methods: {
         countUp: function(event) {
@@ -14,6 +15,9 @@ const app = Vue.createApp({
                 this.counter = this.counter * 2
             }
             console.log(event.target.id)
+        },
+        clickHandler: function(message) {
+            this.message = message
         }
     }
 })
