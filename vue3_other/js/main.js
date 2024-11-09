@@ -1,7 +1,11 @@
 const app = Vue.createApp({
     data: () => ({
-        message: 'Hello Vue.js',
-        checked: true
-    })
+        colors: []
+    }),
+    methods: {
+        addColor: function(event){
+            console.log(event)
+        }
+    }
 })
 app.mount("#app")
