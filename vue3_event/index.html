@@ -8,8 +8,10 @@
 </head>
 <body>
     <div id="app">
-        <button v-on:click="clickHandler($event, 'Vue.js')">click</button>
-        <p>{{message}}</p>
+        <button v-on:click.once="clickHandler">Now</button>
+        <p>
+            {{message}}
+        </p>
 
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
