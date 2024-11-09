@@ -1,6 +1,6 @@
 const app = Vue.createApp({
     data: () => ({
-        selected: []
+        message: 'Hello Vue.js'
     })
 })
 app.mount("#app")
