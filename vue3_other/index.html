@@ -8,10 +8,14 @@
 </head>
 <body>
     <div id="app">
-        {{colors}}
-        <p>Red<input type="checkbox" id="red" value="Red" v-model="colors"></p>
-        <p>Green<input type="checkbox" id="green" value="Green" v-model="colors"></p>
-        <p>Blue<input type="checkbox" id="blue" value="Blue" v-model="colors"></p>
+        {{color}}
+        <input type="radio" id="red" value="Red" v-model="color">
+        <label for="red">Red</label>
+        <input type="radio" id="green" value="Green" v-model="color">
+        <label for="green">Green</label>
+        <input type="radio" id="blue" value="Blue" v-model="color">
+        <label for="blue">Blue</label>
+
 
 
 
