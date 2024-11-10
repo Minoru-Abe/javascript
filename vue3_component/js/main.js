@@ -19,7 +19,8 @@ const buttonCounter = {
 const app = Vue.createApp({
     data: () => ({
         message: 'Hello Vue.js!',
-        totalCount: total
+        totalCount: total,
+        show: true
     }),
     components: {
         'hello-component': {
